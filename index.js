@@ -110,9 +110,11 @@ console.log(getStarshipPassengerAndCrewSumTotal())
 function getNthFilm(character, filmNumber) {
   if (filmNumber = 1, character.filmNumber <= 3){
     return character.films.title
-    }else{
+    } else if(character.filmNumber> 3){
       return `There are only 3 Star Wars movies. Flan fiction excluded.`
-  }
+    }
+   else {" Error..... Searching for Monty Python's Holy Grail"}
+
 }
 /**
  * ### Challenge `getCargoCapacityTotal`
